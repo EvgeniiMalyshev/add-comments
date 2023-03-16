@@ -1,0 +1,159 @@
+*
+	font-family: 'Roboto', sans-serif
+	font-weight: 400
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+    
+$main-color: #FEC110
+
+.container
+    width: 800px
+    margin: 0 auto
+
+.block-form
+    width: 100%
+    height: fit-content
+
+.title_main
+    margin: 20px 0px 50px 0px
+
+.title
+    margin-top: 20px
+
+
+.form
+    margin-top: 10px
+    border: 1px solid #000
+    border-radius: 7px
+    padding: 20px
+    &_wrapper
+        display: flex
+        justify-content: space-between
+    &_footer
+        display: flex
+        justify-content: space-between
+    &_btn
+        background: $main-color
+        border-radius: 7px
+        width: 186px
+        height: 60px
+        font-size: 13px
+        line-height: 125%
+        color: #2C2C2C
+        border: none
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            padding-left: 10px
+    &_text
+        color: #989898
+        padding-top: 20px
+        span
+            color: #f60202
+    &_input
+        width: 49%
+        position: relative
+        margin-bottom: 30px
+        label
+            padding: 0px 5px
+            position: absolute
+            top: -10px
+            left: 30px
+            z-index: 2
+            background-color: #fff
+            color: #989898
+            text-align: center
+            span
+                position: absolute
+                top: 0px
+                right: -2px
+                color: #f60202
+    &_textarea
+        width: 100%
+        margin-bottom: 20px
+        .form_warning
+            left: 170px
+    &_warning
+        display: none
+        color: #f60202
+        position: absolute
+        top: -10px
+        left: 85px
+        background-color: #fff
+        padding: 0px 3px
+    input
+        width: 100%
+        height: 50px
+        padding: 0px 30px
+        border-radius: 7px
+        font-size: 16px
+        line-height: 140%
+        color: #2C2C2C
+        border: 1px solid #989898
+        position: relative
+        &:focus
+            outline: none
+            border: 2px solid $main-color
+    textarea
+        resize: none
+        height: 100px
+        padding: 30px
+        width: 100%
+        border-radius: 7px
+        font-size: 16px
+        line-height: 140%
+        color: #2C2C2C
+        border: 1px solid #989898
+        &:focus
+            outline: none
+            border: 2px solid $main-color
+    &_error
+        .input-name
+            border: 2px solid #f60202
+        .input-text
+            border: 2px solid #f60202
+        .form_warning
+            display: block
+
+.block-comments
+    width: 100%
+    height: fit-content
+    padding: 10px 0px
+
+.comment
+    width: 100%
+    height: fit-content
+    border: 1px solid #000
+    border-radius: 7px
+    padding: 20px
+    margin-bottom: 20px
+    position: relative
+    &_heart
+        position: absolute
+        left: -30px
+        cursor: pointer
+        i
+            color: #d8d7d7
+            font-size: 20px
+    &_trash
+        position: absolute
+        right: -30px
+        cursor: pointer
+        i
+            font-size: 20px
+    &_wrapper
+        display: flex
+        justify-content: space-between
+    &_date
+        color: #9c9a9a
+    &_text
+        margin-top: 20px
+        width: 100%
+        height: fit-content
+    &_empty
+        color: #989898
+
+.like
+    i
+        color: #f60202
